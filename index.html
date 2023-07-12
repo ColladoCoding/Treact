@@ -3,47 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final_Project_1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
 </head>
+
+<div class="site_padding"></div>
+
 <body>
-    <div class="site_padding">
-        <section id="top">
-            <nav>
-                <div class="top__container">
-                    <div class="top__row">
-                        <img class="logo" src="./assets/Top_logo.svg">Treact</img>
-                    </div>
-                        <div class="mid__row">
-                            <ul class="nav__link--list">
-                                <li><a class="nav__link nav__underline" href="#about">About</a></li>
-                                <li><a class="nav__link nav__underline" href="#blog">Blog</a></li>
-                                <li><a class="nav__link nav__underline" href="#pricing">Pricing</a></li>
-                                <li><a class="nav__link nav__underline" href="#contactus">Contact Us</a></li>
-                                <li><a class="nav__link nav__underline--login" href="#login">Login</a></li>
-                                <li><a class="nav__link nav__underline--primary" href="#signup">Sign Up</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+<!-- Nav bar -->
 
-            <header id="landing">
-                <div class="landing__container">
-
-                    <div class="landing__description">
-                        <h1 class="landing__description--title">
-                            
-                            <p class="landing__description--para"></p>Beautiful React Templates <span class="purple">for you</span>
-                            Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                            <figure class="landing__img">
-                                <img class="landing__img--wrap" src="./assets/designing.svg"></img>
-                            </figure>
-                        </h1>
-                    </div>
+    <section id="nav__bar">
+        <div class="row">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./Assets/Top_logo.svg" class="logo__img" alt="Treact logo">
+                    <a class="Treact" href="#">Treact</a>
                 </div>
-            </header>
-        </section>
-    </div>
+                <ul>
+                    <li><a class="nav__link link__hover-effect" href="#">About</a></li>
+                    <li><a class="nav__link link__hover-effect" href="#">Blog</a></li>
+                    <li><a class="nav__link link__hover-effect" href="#">Pricing</a></li>
+                    <li><a class="nav__link link__hover-effect" href="#">Contact Us</a></li>
+                    <li><a class="nav__link link__hover-effect" href="#">Login</a></li>
+                    <li><a class="nav__link link__hover-effect" href="#"></a></li>
+                    <li><a href="#" class="btn">Sign Up</a></li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledMenuIcon-sc-lj69nl-15 bPlZcF">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                  </button>
+                  <div class="menu__backdrop"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Landing -->
+
+    <div id="landing"></div>
+
+<!-- Feaures -->
+
+    <div id="features"></div>
+
+<!-- Quality Work -->
+
+    <div id="quality-work"></div>
+
+<!-- Steps -->
+
+    <div id="steps"></div>
+
+<!-- Values -->
+
+    
+
+<!-- Pricing -->
+
+
+
+<!-- Testimonials -->
+
+
+
+<!-- FAQs -->
+
+
+
+<!-- Contact -->
+
+
+
+<!-- Footer -->
+
+
+    
 </body>
 </html>
