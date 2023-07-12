@@ -13,7 +13,7 @@ html {
 }
 
 .site_padding {
-    padding: 24px 24px;
+    padding: 20px 24px;
 }
 
 a {
@@ -28,10 +28,12 @@ ul {
     display: flex;
     align-items: center;
     list-style-type: none;
+    margin-left: 30%;
 }
 
 li {
     display: flex;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, span {
@@ -42,7 +44,6 @@ h1, h2, h3, h4, h5, span {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 /* Nav bar */
@@ -50,6 +51,7 @@ h1, h2, h3, h4, h5, span {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__link {
@@ -58,6 +60,10 @@ h1, h2, h3, h4, h5, span {
     margin: 8px 16px;
     color:black;
     transform: all 300ms ease;
+}
+
+.nav__link:hover {
+
 }
 
 .logo {
@@ -73,8 +79,13 @@ h1, h2, h3, h4, h5, span {
     text-decoration: none;
     padding: 0 12px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
+}
+
+.Treact:hover {
+    transition: 300ms ease;
+    color: rgb(88, 9, 161);
 }
 
 .login {
@@ -83,10 +94,16 @@ h1, h2, h3, h4, h5, span {
 
 .btn {
     text-decoration: none;
-    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
     color: white;
     padding: 8px 24px;
-    background-color: blueviolet;
+    background-color: rgb(108, 21, 190)
+}
+
+.btn:hover {
+    transition: 300ms ease;
+    background-color: rgb(88, 9, 161);
 }
 
 .btn__menu {
@@ -98,6 +115,8 @@ h1, h2, h3, h4, h5, span {
 }
 
 /* Landing */
+
+
 
 /* Features */
 
@@ -116,3 +135,8 @@ h1, h2, h3, h4, h5, span {
 /* Contact */
 
 /* Footer */
+
+
+/* Phones and Tablets */
+
+@keyframes
