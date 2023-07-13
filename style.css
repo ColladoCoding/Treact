@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, span {
 
 }
 
+.container {
+
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -95,9 +99,10 @@ h1, h2, h3, h4, h5, span {
 .btn {
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 30px;
+    border-radius: 24px;
     color: white;
     padding: 8px 24px;
+    font-weight: 14px;
     background-color: rgb(108, 21, 190)
 }
 
@@ -109,6 +114,9 @@ h1, h2, h3, h4, h5, span {
 .btn__menu {
     display: none;
 }
+
+.btn:hover, .btn__purple--menu:hover {
+    background-color: rgb(80 17 204);
 
 .menu__backdrop {
 
@@ -139,4 +147,14 @@ h1, h2, h3, h4, h5, span {
 
 /* Phones and Tablets */
 
-@keyframes
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 640px) {
+
+}
