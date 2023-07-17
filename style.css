@@ -14,10 +14,6 @@ h3,
 h4,
 h5 {}
 
-.site_padding {
-    padding: 20px 24px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -175,7 +171,7 @@ li {}
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 5px solid grey;
+    border: 3px solid grey;
     border-color: #6415ff;
     border-radius: 40px;
 
@@ -220,19 +216,24 @@ li {}
 .feat {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .title {
-
+    color:#6415ff;
+    font-weight: bold;
 }
 
 .T__F {
-
+    font-size: 36px;
+    font-weight: bold;
+    margin: 16px 0;
 }
 
 .title--para {
-    
+    width: 50%;
+    opacity: calc(70%);
 }
 
 /* Quality Work */
