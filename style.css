@@ -146,6 +146,7 @@ li {}
     display: flex;
     font-size: 18px;
     opacity: .75;
+    line-height: 1.5;
 }
 
 .search_bar {
@@ -248,6 +249,7 @@ li {}
     max-width: 40%;
     opacity: calc(70%);
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .services {
@@ -283,6 +285,7 @@ li {}
     margin-left: 55px;
     opacity: .75;
     text-align: left;
+    line-height: 2.0;
 }
 
 .icon {
@@ -305,6 +308,79 @@ li {}
 
 /* Quality Work */
 
+.QW__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.QW__row {
+    width: 47%;
+    height: 450px;
+}
+
+.text__row {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.QW {
+    height: 24px;
+    font-size: 24px;
+    margin: 5px;
+    color: #6415ff;
+    font-weight: bold;
+}
+
+.screenshot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SS__wrapper {
+    width: 53%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.QW--title {
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.QW--title--wrapper {
+    font-size: 49px;
+}
+
+.QW__para {
+    line-height: 1.5;
+    font-size: 18px;
+    opacity: .75; 
+}
+
+.QW__para--wrapper {
+    padding: 12px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.learn {
+    width: 25%;
+    text-decoration: none;
+    border-radius: 24px;
+    color: white;
+    padding: 12px 26px;
+    font-weight: 14px;
+    background-color: #6415ff;
+
+}
+
+/* Values */
 
 
 /* Pricing */
