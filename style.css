@@ -73,16 +73,16 @@ li {}
     margin: 0 0 0 45px;
     font-size: 14px;
     color: black;
-    opacity: calc(70%);
 }
 
 .nav__link:hover {
+    animation: forwards;
     text-decoration: underline;
     transition: all ease-in-out .3s;
 }
 
 .login {
-    margin: 0 16px 0 45px;
+    margin: 0 16px 0 100px;
 }
 
 .sign_up {
@@ -92,7 +92,7 @@ li {}
     color: white;
     padding: 8px 24px;
     font-weight: 14px;
-    background-color: #6415ff;
+    background-color: rgb(97, 22, 218);
 }
 
 .sign_up:hover {
@@ -105,10 +105,9 @@ li {}
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 40px 45px;
+    padding: 90px 45px;
     height: 100%;
     width: 100%;
-    max-width: 1200;
     display: flex;
 }
 
@@ -142,7 +141,8 @@ li {}
 
 .beautiful--para {
     display: flex;
-    font-size: 18px;
+    font-size: 17px;
+    opacity: .75;
 }
 
 .search_bar {
@@ -153,9 +153,9 @@ li {}
 
 .get {
     text-decoration: none;
-    border-radius: 24px;
+    border-radius: 28px;
     color: white;
-    padding: 14px 52px;
+    padding: 15px 38px;
     font-size: 16px;
     background-color: #6415ff;
 }
@@ -166,28 +166,28 @@ li {}
 }
 
 .email {
-    height: 75px;
+    height: 65px;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 3px solid grey;
-    border-color: #6415ff;
+    border: 2.5px solid grey;
     border-radius: 40px;
-
-}
-
-.e-mail {
-    height: 60px;
-    border-radius: 40px;
-    opacity: calc(100 / 3 %);
+    opacity: calc(75%);
 }
 
 .email:hover {
     transition: 300ms ease;
-    opacity: calc(75%);
+    opacity: calc(100%);
 }
 
+.e-mail {
+    width: 55%;
+    font-size: 14px;
+    padding: 0 10px;
+    border: none;
+    opacity: calc(100 / 3);
+}
 
 .trusted {
     margin: 30px 0 0 0;
@@ -208,20 +208,22 @@ li {}
 /* Features */
 
 .features {
+    height: 800px;
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
+    background-color: orange;
 }
 
 .feat {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .title {
-    color:#6415ff;
+    color: #6415ff;
     font-weight: bold;
 }
 
@@ -231,10 +233,21 @@ li {}
     margin: 16px 0;
 }
 
-.title--para {
-    width: 50%;
-    opacity: calc(70%);
+.AS {
+    font-weight: bold;
+    color: #6415ff;
+    width: 100%;
 }
+
+.title--para {
+    max-width: 35%;
+    opacity: calc(70%);
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Quality Work */
 
