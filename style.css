@@ -230,6 +230,7 @@ li {}
 .title {
     color: #6415ff;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .T__F {
@@ -332,6 +333,7 @@ li {}
     margin: 5px;
     color: #6415ff;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .screenshot {
@@ -359,7 +361,7 @@ li {}
 .QW__para {
     line-height: 1.5;
     font-size: 18px;
-    opacity: .75; 
+    opacity: .75;
 }
 
 .QW__para--wrapper {
@@ -380,11 +382,160 @@ li {}
 
 }
 
+/* Steps */
+
+.step__row {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.laptop__img {
+    width: 50%;
+    margin: 8px 24px;
+}
+
+.steps__des--wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.steps {
+    color: #6415ff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.easy__wrap {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.steps__con {
+    display: flex;
+    height: 50%;
+    Width: 60%;
+    padding: 16px 12px;
+}
+
+.steps__mini__con {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    display: flex;
+    opacity: .75;
+    height: 35%;
+    font-size: 32px;
+    color: rgb(196, 194, 194);
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.steps__dir {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    height: 25%;
+    font-size: 20px;
+}
+
+.steps__des {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 2;
+    font-size: 14px;
+    color: grey;
+    padding-bottom: 16px;
+
+    height: 100%;
+}
+
 /* Values */
 
+.val_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px dotted black;
+    height: 800px;
+}
+
+.values__con {
+    border: 2px dotted black;
+}
+
+.val--wrap {
+
+}
+
+.values {
+    color: #6415ff;
+    font-weight: bold;
+}
+
+.val__headline--wrap {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.val__para {
+
+}
+
+.val__para--wrap {
+
+}
+
+.val__con,
+.pro__con {
+    border: 4px dotted red;
+}
+
+.afford__icon,
+.pro__icon {
+
+}
+
+.afford__title,
+.pro__title {
+
+}
+
+.afford__para,
+.pro__para {
+
+}
+
+.afford__des, 
+.pro__des {
+
+}
+
+.afford__img,
+.pro__img {
+
+}
+
+.proto_wrap {
+    width: 50%;
+}
+
+.proto {
+    width: 50%
+}
 
 /* Pricing */
-
 
 
 /* Testimonials */
