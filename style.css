@@ -53,9 +53,7 @@ li {}
 }
 
 .nav_row {
-    border: 3px solid violet;
-    max-width: 1400px;
-    border: 2px double blue;
+    
 }
 
 .logo {
@@ -83,7 +81,7 @@ li {}
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    margin: 0 0 0 55px;
+    margin: 16px;
     font-size: 14px;
     color: black;
 }
@@ -95,7 +93,7 @@ li {}
 }
 
 .login {
-    margin: 0 16px 0 100px;
+    margin: 0 16px;
 }
 
 .sign_up {
@@ -183,15 +181,6 @@ li {}
     justify-content: space-around;
     border: 2.5px solid grey;
     border-radius: 40px;
-    opacity: calc(75%);
-}
-
-.email:hover {
-    transition: 300ms ease;
-    opacity: calc(100%);
-}
-.email:last-child {
-    stop-opacity: calc(100%);
 }
 
 .e-mail {
@@ -200,7 +189,13 @@ li {}
     padding: 0 10px;
     border-color: white;
     border: none;
-    opacity: calc(100 / 3);
+    outline: none;
+    opacity: calc(75%);
+}
+
+.e-mail:hover {
+    transition: 300ms ease;
+    opacity: calc(100%);
 }
 
 .trusted {
@@ -276,7 +271,7 @@ li {}
     display: flex;
     flex-direction: column;
     width: calc(100% / 3);
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .serv__title {
@@ -750,6 +745,33 @@ li {}
 
 /* Testimonials */
 
+.test__con {
+
+}
+.test__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dotted blue;
+    width: 50%;
+}
+
+.love__img {
+    width: 50%;
+    border: 3px solid red;
+}
+
+.test__rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+}
+
+.test
+
+
 /* Contact */
 
 .contact__con {
@@ -764,7 +786,10 @@ li {}
     width: 1000px;
     border: 2px dotted red;
     background-color: white;
+}
 
+.contact__para {
+    
 }
 
 /* Footer */
