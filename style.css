@@ -761,11 +761,12 @@ li {}
     height: 75vh;
     width: 60vw;
     padding-left: 16px;
-    margin-left: 12px;
+    margin-left: 24px;
 }
 
 .love__img {
     width: 100%;
+    margin-right: 24px;
 }
 
 .test__title {
