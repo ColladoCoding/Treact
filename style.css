@@ -8,12 +8,6 @@
     font-weight: 500;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {}
-
 html {
     scroll-behavior: smooth;
 }
@@ -39,8 +33,6 @@ ul {
     list-style-type: none;
     margin-left: 30%;
 }
-
-li {}
 
 /* Navigation */
 
@@ -406,10 +398,12 @@ li {}
 
 }
 
-/* Steps */
-
-.step__container {
+.learn:hover {
+    transition: all ease 300ms;
+    background-color: rgb(80 17 204);
 }
+
+/* Steps */
 
 .step__row {
     display: flex;
@@ -561,9 +555,6 @@ li {}
 
 .fa-dollar-sign,
 .fa-suitcase {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 35px;
     width: 35px;
     border-radius: 100%;
@@ -603,11 +594,6 @@ li {}
 .pro__des {
     margin-right: 24px;
     color: #7C8BA1;
-}
-
-.afford__img,
-.pro__img {
-
 }
 
 .proto_wrap {
@@ -686,8 +672,26 @@ li {}
     padding: 12px 12px;
 }
 
-.personal__prices__col {
-    border-top-color: 20px linear-gradient(135deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
+.personal__HL {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
+}
+
+.enter__HL {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient( 115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
 }
 
 .top,
@@ -697,6 +701,8 @@ li {}
     display: flex;
     justify-content: center;
     align-items: center;
+    position:  relative;
+    
 }
 
 .list {
@@ -778,23 +784,11 @@ li {}
     border-bottom-right-radius: 10px;
 }
 
-.personal__prices__col,
-.personal__desc__col,
-.personal__btn__col {
-
-}
-
 .biz__prices__col,
 .biz__desc__col,
 .biz__btn__col {
     background-color: rgb(102, 126, 234);
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
-}
-
-.enter__prices__col,
-.enter__desc__col,
-.enter__btn__col {
-
 }
 
 .plan__buy {
@@ -809,7 +803,9 @@ li {}
 } 
 
 .plan__buy:hover {
-    
+    text-align: left;
+    box-shadow: inset;
+    transition: all ease 300ms;
 }
 
 .pb {
@@ -960,7 +956,7 @@ li {}
     color:#6415ff;
 }
 
-/* Contact */
+    /* Contact */
 
 .contact__con {
     height: 300px;
@@ -1116,26 +1112,55 @@ li {}
 .foot__icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 30%;
+    width: 8vw;
+    height: 5vh;
 }
 
 .fa-brands {
-    display: flex;
-    position: sticky;
-    justify-content: center;
-    align-items: center;
-    height: 1px;
     background-color: whitesmoke;
     border-radius: 100%;
-    padding: 14px 9px;
+    margin: 6px 6px;
     color:black;
+    font-size: small;
 }
 
-@media {}
+.fa-facebook-f {
+    padding: 10px 13px;
+}
 
-@media {}
+.fa-twitter,
+.fa-youtube {
+    padding: 10px 12px; 
+}
 
-@media {}
+/* TABLETS AND PHONES */
+
+@media (max-width: 728px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p {
+        flex-direction: column;
+    }
+
+    .ul {
+        flex-direction: column;
+    }
+}
+
+@media {
+
+}
+
+@media {
+    
+}
