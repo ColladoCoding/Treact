@@ -810,6 +810,12 @@ ul {
     text-decoration: none;
 } 
 
+.plan__buy:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15);
+    transition: ease 300ms;
+}
+
 .pb {
     background-image: linear-gradient(135deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
     color: white;
@@ -1145,30 +1151,17 @@ ul {
 
 /* TABLETS AND PHONES */
 
-@media (max-width: 728px) {
+@media (max-width:992px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        max-width: 992px; 
     }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .p {
-        flex-direction: column;
-    }
-
-    .ul {
-        flex-direction: column;
-    }
-}
-
-@media {
 
 }
 
-@media {
-    
+@media (max-width:768px) {
+
+}
+
+@media (max-width:458px) {
+
 }
