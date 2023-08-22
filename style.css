@@ -1152,8 +1152,11 @@ ul {
 /* TABLETS AND PHONES */
 
 @media (max-width:992px) {
+    .nav {
+        width: 100%;
+    
     .container {
-        max-width: 992px; 
+        max-width: 100%; 
     }
 
 }
