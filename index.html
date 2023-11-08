@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <script src="https://kit.fontawesome.com/eea721fa9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,20 +15,55 @@
     <!-- Navigation-->
 
     <section id="nav__bar>">
-        <div class="nav__row row">
+        <div class="row nav__row">
             <div class="nav">
                 <div class="logo">
                     <img src="./Assets/Top_logo.svg" class="logo__img" alt="logo">
                     <a class="treact" href="#">Treact</a>
                 </div>
-                <ul>
+                <ul class="nav__links">
                     <li><a class="nav__link link__hover-effect" href="#">About</a></li>
                     <li><a class="nav__link link__hover-effect" href="#">Blog</a></li>
                     <li><a class="nav__link link__hover-effect" href="#">Pricing</a></li>
                     <li><a class="nav__link link__hover-effect" href="contact">Contact Us</a></li>
                     <li><a class="nav__link link__hover-effect login" href="#">Login</a></li>
-                    <li><a href="#" class="sign_up">Sign Up</a></li>
+                    <li><a href="#" class="btn sign_up">Sign Up</a></li>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()" fdprocessedid="fugz8i">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light__NavToggle-sc-lj69nl-9 QIlpQ closed">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                  </button>
+                  <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-sc-lj69nl-14 brSrPp">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </button>
+                    <ul class="menu__links">
+                      <li class="menu__list">
+                        <a href="#features" class="menu__link menu__purple" onclick="closeMenu()">About</a>
+                      </li>
+                      <li class="menu__list">
+                        <a href="" class="menu__link menu__purple" onclick="closeMenu()">Blog</a>
+                      </li>
+                      <li class="menu__list">
+                        <a href="#pricing" class="menu__link menu__purple" onclick="closeMenu()">Pricing</a>
+                      </li>
+                      <li class="menu__list">
+                        <a href="#contact-us" class="menu__link menu__purple" onclick="closeMenu()">Contact Us</a>
+                      </li>
+                      <li class="menu__list">
+                        <a href="" class="menu__link menu__purple" onclick="closeMenu()">Login</a>
+                      </li>
+                      <li class="menu__list">
+                        <button class="btn__purple--menu" onclick="closeMenu()">Sign Up</button>
+                      </li>
+                    </ul>
+                  </div>
             </div>
         </div>
     </section>
@@ -36,7 +71,7 @@
     <!-- Landing -->
 
     <section id="landing">
-        <div class="land__con container">
+        <div class="container land__con">
             <div class="row land">
                 <h1 class="beautiful">Beautiful React Templates
                     <span class="purple">for you.</span>
@@ -45,7 +80,7 @@
                     components with a variety of pages and components.</p>
                 <form class="email">
                     <input class="e-mail" type="text" placeholder="Your E-mail Address">
-                    <a href="#" class="get">Get Started</a>
+                    <a href="#" class="btn get">Get Started</a>
                     </input>
                 </form>
                 <p class="trusted">OUR TRUSTED CUSTOMERS</p>
@@ -58,8 +93,8 @@
     <!-- Features -->
 
     <section id="features" class="features">
-        <div class="feat__con container">
-            <div class="feat row">
+        <div class="container feat__con">
+            <div class="row feat">
                 <h1 class="title">FEATURES</h1>
                 <p class="T__F">We Have Amazing<span class="AS"> Service.</span></p>
                 <h2 class="title--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -67,54 +102,54 @@
                 <div class="services">
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/shield-icon.svg">
-                            <h1 class="serv__title">Secure</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">Secure</h1>
                             <p class="serv__des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iusto.
                             </p>
                         </div>
                     </div>
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/support-icon.svg">
-                            <h1 class="serv__title">24/7_Support</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">24/7 Support</h1>
                             <p class="serv__des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
                                 iusto.</p>
                         </div>
                     </div>
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/customize-icon.svg">
-                            <h1 class="serv__title">Customizable</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">Customizable</h1>
                             <p class="serv__des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Fugiat, accusamus.</p>
                         </div>
                     </div>
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/reliable-icon.svg">
-                            <h1 class="serv__title">Reliable</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">Reliable</h1>
                             <p class="serv__des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Aut, eius.</p>
                         </div>
                     </div>
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/fast-icon.svg">
-                            <h1 class="serv__title">Fast</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">Fast</h1>
                             <p class="serv__des">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Quisquam, aperiam?</p>
                         </div>
                     </div>
                     <div class="service">
                         <div class="icon__wrapper"><img class="icon" src="./Assets/simple-icon.svg">
-                            <h1 class="serv__title">Easy</h1>
                         </div>
                         <div class="serv__con">
+                            <h1 class="serv__title">Easy</h1>
                             <p class="serv__des">Lorem ipsum dolor sit amet consectetur, adipisicing
                                 elit. Provident, sequi.</p>
                         </div>
@@ -127,8 +162,8 @@
     <!-- Quality Work -->
 
     <section id="quality_work">
-        <div class="QW__container container">
-            <div class="QW__row row">
+        <div class="container QW__container">
+            <div class="row QW__row">
                 <div class="text__row">
                     <header class="QW">QUALITY WORK</header>
                     <div class="QW--title--wrapper">
@@ -139,7 +174,7 @@
                             voluptatem odio, corrupti cupiditate veniam tempore odit, consequuntur pariatur vitae
                             doloribus repellendus blanditiis eveniet dolor!</h3>
                     </div>
-                    <a href="#" class="learn">Learn More</a>
+                    <a href="#" class="btn learn">Learn More</a>
                 </div>
                 <div class="SS__wrapper"><img class="screenshot" src="./Assets/hero-screenshot-1.png"></img></div>
             </div>
@@ -149,8 +184,8 @@
     <!-- Steps -->
 
     <section id="steps">
-        <div class="step__container container">
-            <div class="step__row row">
+        <div class="container step__container">
+            <div class="row step__row">
                 <img class="laptop__img" src="./Assets/hero-screenshot-2.png">
                 <div class="steps__des--wrap">
                     <div class="steps__wrap">
@@ -189,7 +224,7 @@
 
 <section id="values">
     <div class="container">
-        <div class="val_row row">
+        <div class="row val_row">
             <div class="values__con">
                 <div class="val--wrap">
                     <h1 class="values">VALUES</h1>
@@ -210,7 +245,7 @@
                     <div class="pro__para"><p class="pro__des">We assure you that our templates are designed and created by professional designers.</p></div>
                 </div>
             </div>
-            <a href="#" class="learn">Learn More</a>
+            <a href="#" class="btn learn">Learn More</a>
         </div>
         <div class="proto_wrap"><img class="proto" src="./Assets/prototype-illustration.svg"></div>
     </div>
@@ -221,8 +256,8 @@
     <!-- Pricing -->
 
     <section id="pricing">
-        <div class="pricing_con container">
-            <div class="price_row row">
+        <div class="container pricing_con">
+            <div class="row price_row">
                 <div class="price__land">
                     <div class="pricing__title">PRICING</div>
                     <div class="price__head--wrap">
@@ -251,7 +286,7 @@
                                     <li class="mid__list">Basic Assistance</li>
                                 </ul>
                             </div>
-                            <div class="personal__btn__col bot"><a href="#" class="plan__buy pb">BUY NOW</a></div>
+                            <div class="personal__btn__col bot"><a href="#" class="btn plan__buy pb">BUY NOW</a></div>
                         </div>
                         <div class="biz__con--wrap">
                             <div class="biz__prices__col top">
@@ -270,7 +305,7 @@
                                     <li class="biz__mid">Priority Assistance</li>
                                 </ul>
                             </div>
-                            <div class="biz__btn__col bot"><a href="#" class="plan__buy bb">BUY NOW</a></div>
+                            <div class="biz__btn__col bot"><a href="#" class="btn plan__buy bb">BUY NOW</a></div>
                         </div>
                         <div class="enterprise__con--wrap">
                             <div class="enter__prices__col top">
@@ -290,7 +325,7 @@
                                     <li class="mid__list">Personal Assistance</li>
                                 </ul>
                             </div>
-                            <div class="enter__btn__col bot"><a href="#" class="plan__buy eb">BUY NOW</a></div>
+                            <div class="enter__btn__col bot"><a href="#" class="btn plan__buy eb">BUY NOW</a></div>
                         </div>
                     </div>
                 </div>
@@ -301,8 +336,8 @@
     <!-- Testimonials -->
 
     <section id="testimonials">
-        <div class="test__con container">
-            <div><img class="love__img" src="/Assets/love-illustration.svg"></img></div>
+        <div class="container test__con">
+            <div><img class="love__img" src="./Assets/love-illustration.svg"></img></div>
             <div class="test__row row">
                 <div class="test__title">TESTIMONIALS</div>
                 <div class="test__para">Our Clients <span class="purple">Love Us.</span></div>
@@ -336,12 +371,12 @@
     <!-- Contact -->
 
     <section id="contact">
-        <div class="contact__con container">
+        <div class="container contact__con">
             <div class="contact__row row">
                 <p class="contact__para">Developers all over the world are happily using Treact.</p>
                 <div class="con__btn--wrap">
-                    <a href="#" class="con__btn get__started">Get Started</a>
-                    <a href="#" class="con__btn contact__us">Contact Us</a>
+                    <a href="#" class="btn con__btn get__started">Get Started</a>
+                    <a href="#" class="btn con__btn contact__us">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -350,7 +385,7 @@
     <!--Cushion-->
 
 <section id="cushion">
-    <div class="cush__con container">
+    <div class="container cush__con">
         <div class="cush__row">
 
         </div>
@@ -360,8 +395,8 @@
     <!-- Footer -->
 
     <footer>
-    <div class="feet container">
-        <div class="foot__row row">
+    <div class="container feet">
+        <div class="row foot__row">
                 <div class="links">
                     <div class="foot__main">
                         <div class="link__title">MAIN</div>
