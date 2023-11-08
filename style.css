@@ -18,7 +18,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 .row {
@@ -41,6 +41,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
+    width: 100%;
 }
 
 .logo {
@@ -67,7 +68,6 @@ ul {
 .treact:hover {
     color: #6415ff;
     transition: 400ms ease;
-
 }
 
 .nav__link {
@@ -103,6 +103,12 @@ ul {
 .sign_up:hover {
     transition: 300ms ease;
     background-color: rgb(80 17 204);
+}
+
+.btn__menu,
+.menu__backdrop,
+.menu__links {
+    display: none;
 }
 
 /* Landing */
@@ -269,23 +275,25 @@ ul {
 
 .service {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: calc(100% / 3);
     padding: 40px 0;
 }
 
+.serv__con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
 .serv__title {
-    margin-top: 10px;
-    margin-left: 14px;
+    margin: 10px 0;
     font-size: 23px;
     font-weight: bold;
     color:#243363;
-}
-
-.serv__con {
-    display: flex;
-    justify-content: center;
-    padding-left: 30px;
 }
 
 .serv__des {
@@ -967,7 +975,7 @@ ul {
     /* Contact */
 
 .contact__con {
-    height: 300px;
+    height: 275px;
     background-color: #6415ff;
     border-radius: 10px;
 }
@@ -1001,7 +1009,7 @@ ul {
     text-decoration: none;
     border-radius: 40px;
     color: white;
-    padding: 15px 42px;
+    padding: 32px 45px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -1153,19 +1161,192 @@ ul {
 
 @media (max-width:992px) {
     .nav {
-        width: 100%;
+        padding: 32px 32px;
+        display: flex;
     }
     
+    .nav__link {
+        text-decoration: none;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu,
+    .btn__menu--close,
+    .menu__backdrop,
+    .menu__links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu--open .menu__backdrop {
+        visibility: hidden;
+        opacity: 1;
+    }
+
+    .btn__menu {
+        border: none;
+        background-color: transparent;
+        right: 25px;
+        text-align: center;
+        
+    }
+
+    .btn__menu:hover {
+        color: #6415ff;
+        transition: 300ms ease;
+        cursor: pointer;
+    }
+
+    .btn__menu--close {
+        right: 20px;
+    }
+
+    .btn__menu--close:hover {
+        transition: 300ms ease;
+        color:#6415ff;
+        cursor: pointer;
+    }
+
+    .menu__backdrop {
+        align-items: center;
+        background-color: white;
+        width: 98vw;
+        height: 48vh;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        margin-top: 30px;
+        padding: 10px;
+        border: dotted 1px #7C8BA1;
+    }
+
+    .menu__links {
+        margin: 0 0 0 0;
+    }
+
+    .menu__list {
+        padding: 15px;
+    }
+
+    .menu__link {
+        color: black;
+       text-decoration: none; 
+       padding: 10px;
+       font-size: 17.5px;
+       font-weight: bold;
+    }
+
+    .menu__link:hover {
+        transition: 300ms ease;
+        color:#6415ff;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    .btn__purple--menu {
+        text-decoration: none;
+        border-radius: 32px;
+        border: none;
+        color: white;
+        padding: 14px 32px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #6415ff;
+    }
+
     .container {
-        max-width: 100%; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .land {
+        width: 55vw;
+    }
+
+    .purple,
+    .beautiful {
+        padding: none;
+        width: 55vw;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .beautiful--para {
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .email {
+        width: 90vw;
+
+    }
+
+    .trusted {
+        justify-content: center;
+        padding: 0 0 16px 0;
+        font-size: 14px;
+    }
+
+    .customers__img {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .QW__container {
+
+    }
+
+    
+
+    .step__container {
+
+    }
+
+    .pricing__con {
+
+    }
+
+    .test__con {
+
+    }
+
+    .contact__con {
+
+    }
+
+    .feet {
+
     }
 
 }
 
 @media (max-width:768px) {
+.nav {
+
+}
+
+.container {
+    max-width: 100%;
+}
 
 }
 
 @media (max-width:458px) {
+.nav {
+
+}
+
+.container {
+    max-width: 100%;
+}
 
 }
