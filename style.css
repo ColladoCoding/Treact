@@ -1489,6 +1489,11 @@ ul {
     }
   
     .feet {
+        width: 99%
+    }
+
+    .foot__row {
+        width: 90%;
     }
   }
   
