@@ -1687,13 +1687,150 @@ ul {
 
   }
   
-  @media (max-width: 458px) {
-    .nav {
-    }
-  
-    .container {
-      max-width: 100%;
+  @media (max-width: 576px) {
+ 
+    .land {
+        padding: 0 0 0 0;
     }
 
+    .get {
+        
+    }
+
+
+    .title__features,
+    .AS {
+        font-size: 36px;
+    }
+
+    .title--para {
+        font-size: 14px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon__wrapper {
+        margin: 16px 0;
+    }
+
+    .serv__con {
+        padding: 0 0 0 0;
+    }
+
+    .serv__title,
+    .serv__des {
+        width: 100%;
+        text-align: center;
+    }
+
+    .QW__container {
+        padding-top: 0;
+    }
+
+    .SS__wrapper {
+        width: 80%;
+    }
+
+    .text__row {
+        width: 100%;
+    }
+
+    .learn {
+        width: 32%;
+    }
+
+    .laptop__img {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+
+    .easy__wrap,
+    .purple {
+        text-align: center;
+    }
+
+    .steps__con {
+        width: 100%;
+    }
+
+    .proto_wrap {
+        width: 80%;
+    }
+
+    .values__con {
+        width: 80%;
+    }
+
+    .val__con {
+        width: 80%;
+    }
+
+    .price__head {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .price__head__para {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .personal__con--wrap,
+    .biz__con--wrap,
+    .enterprise__con--wrap {
+        width: 70%;
+    }
+
+    .top__price,
+    .biz__top__price {
+        font-size: 36px;
+    }
+
+    .love__img {
+        width: 80%;
+        margin: 0 auto;
+        padding: 16px 0;
+    }
+
+    .test__row {
+        width: 75%;
+    }
+
+    .test__footer,
+    .test__footer--wrap {
+        flex-direction: column;
+    }
+
+    .test__name--wrap {
+        margin: 16px 0;
+    }
+    
+    .contact__con {
+    }
+
+    .contact__para {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .con__btn--wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .con__btn {
+        text-align: center;
+        width: 30%;
+        margin: 12px 0;
+        font-size: 14px;
+        padding: 14px 14px;
+    }
 
   }
